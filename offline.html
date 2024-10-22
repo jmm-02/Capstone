@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No Internet</title>
+
+    <!-- tailwind -->
+    <link href="output.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="node_modules/@tabler/icons-webfont/dist/tabler-icons.min.css"
+    />
+  </head>
+  <body
+    class="bg-[#f0f0f0] h-screen w-screen flex flex-col items-center justify-center gap-y-3 text-gray-700"
+  >
+    <i class="ti ti-wifi-off text-[8rem]"></i>
+    <h2 class="text-4xl font-bold">No Internet Connection</h2>
+
+    <section class="flex flex-col gap-y-5 text-xl">
+      <p>Try these steps to get back online:</p>
+
+      <div class="flex items-center gap-x-3">
+        <i class="ti ti-circle-check"></i>
+        <p>Check your modem or router</p>
+      </div>
+
+      <div class="flex items-center gap-x-3">
+        <i class="ti ti-circle-check"></i>
+        <p>Reconnect to Wi-Fi</p>
+      </div>
+    </section>
+
+    <section class="flex gap-x-4">
+        <button
+        onclick="location.reload();"
+        class="p-2 bg-blue-600 hover:bg-blue-500 text-white rounded-md"
+      >
+        Reload Page
+      </button>
+  
+      <button
+        onclick="window.history.back();"
+        class="p-2 bg-blue-600 hover:bg-blue-500 text-white rounded-md"
+      >
+        Back
+      </button>
+    </section>
+
+  </body>
+</html>
